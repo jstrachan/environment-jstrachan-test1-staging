@@ -13,3 +13,6 @@ dependencies:
 - name: shopping_cart
   repository: http://jenkins-x-chartmuseum:8080
   version: 0.0.3
+- name: rails2
+  repository: http://jenkins-x-chartmuseum:8080
+  version: 0.0.1
