@@ -10,3 +10,6 @@ dependencies:
 - name: myvets2
   repository: http://jenkins-x-chartmuseum:8080
   version: 2.0.0
+- name: demo73
+  repository: http://jenkins-x-chartmuseum:8080
+  version: 0.0.1
