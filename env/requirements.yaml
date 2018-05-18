@@ -13,3 +13,6 @@ dependencies:
 - name: mynode10
   repository: http://jenkins-x-chartmuseum:8080
   version: 0.0.8
+- name: myvets2
+  repository: http://jenkins-x-chartmuseum:8080
+  version: 2.0.2
