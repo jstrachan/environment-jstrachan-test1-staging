@@ -7,27 +7,3 @@ dependencies:
   name: exposecontroller
   repository: http://chartmuseum.build.cd.jenkins-x.io
   version: 2.3.58
-- name: demo74
-  repository: http://jenkins-x-chartmuseum:8080
-  version: 0.0.1
-- name: mynode10
-  repository: http://jenkins-x-chartmuseum:8080
-  version: 0.0.12
-- name: myvets2
-  repository: http://jenkins-x-chartmuseum:8080
-  version: 2.0.2
-- name: cbawesome
-  repository: http://jenkins-x-chartmuseum:8080
-  version: 0.0.3
-- name: demo73
-  repository: http://jenkins-x-chartmuseum:8080
-  version: 0.0.3
-- name: demo72
-  repository: http://jenkins-x-chartmuseum:8080
-  version: 0.0.2
-- name: demo70
-  repository: http://jenkins-x-chartmuseum:8080
-  version: 0.0.2
-- name: rails3
-  repository: http://jenkins-x-chartmuseum:8080
-  version: 0.0.2
