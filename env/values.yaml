@@ -39,3 +39,12 @@ expose:
   Annotations:
     helm.sh/hook: post-install,post-upgrade
     helm.sh/hook-delete-policy: hook-succeeded
+expose:
+  config:
+    domain: 35.234.138.217.nip.io
+    exposer: Ingress
+    http: "true"
+    tlsacme: "false"
+  Annotations:
+    helm.sh/hook: post-install,post-upgrade
+    helm.sh/hook-delete-policy: hook-succeeded
