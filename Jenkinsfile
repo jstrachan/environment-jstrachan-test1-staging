@@ -11,6 +11,7 @@ pipeline {
         container('maven') {
           //sh 'make build'
           dir('env') {
+            input "Paused"
             sh 'jx step helm build'
           }
         }
