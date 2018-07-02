@@ -13,3 +13,6 @@ dependencies:
 - name: bdd-test-golang-http-1530536708
   repository: http://jenkins-x-chartmuseum:8080
   version: 0.0.1
+- name: bdd-test-aspnet-app-1530536708
+  repository: http://jenkins-x-chartmuseum:8080
+  version: 0.0.1
