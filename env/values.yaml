@@ -107,3 +107,12 @@ jenkins:
     Global:
       EnvVars:
         DOCKER_REGISTRY: gcr.io
+expose:
+  config:
+    domain: 35.233.106.237.nip.io
+    exposer: Ingress
+    http: "true"
+    tlsacme: "false"
+  Annotations:
+    helm.sh/hook: post-install,post-upgrade
+    helm.sh/hook-delete-policy: hook-succeeded
