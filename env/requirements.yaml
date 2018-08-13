@@ -16,3 +16,6 @@ dependencies:
 - name: nodey27
   repository: http://jenkins-x-chartmuseum:8080
   version: 0.0.1
+- name: redis
+  repository: https://kubernetes-charts.storage.googleapis.com
+  version: 3.7.6
