@@ -186,3 +186,18 @@ expose:
   Annotations:
     helm.sh/hook: post-install,post-upgrade
     helm.sh/hook-delete-policy: hook-succeeded
+expose:
+  config:
+    domain: 130.211.48.122.nip.io
+    exposer: Ingress
+    http: "true"
+    tlsacme: "false"
+    pathMode: ""
+  Annotations:
+    helm.sh/hook: post-install,post-upgrade
+    helm.sh/hook-delete-policy: hook-succeeded
+jenkins:
+  Servers:
+    GHE:
+    - Name: GHE
+      Url: https://github.beescloud.com/api/v3/
