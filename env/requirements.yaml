@@ -4,7 +4,7 @@ dependencies:
   version: 0.0.3
 - name: demo151
   repository: http://jenkins-x-chartmuseum:8080
-  version: 0.0.2
+  version: 0.0.3
 - name: demo153
   repository: http://jenkins-x-chartmuseum:8080
   version: 0.0.2
