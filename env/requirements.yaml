@@ -1,13 +1,4 @@
 dependencies:
-- name: demo150
-  repository: http://jenkins-x-chartmuseum:8080
-  version: 0.0.3
-- name: demo151
-  repository: http://jenkins-x-chartmuseum:8080
-  version: 0.0.3
-- name: demo153
-  repository: http://jenkins-x-chartmuseum:8080
-  version: 0.0.2
 - alias: expose
   name: exposecontroller
   repository: https://chartmuseum.build.cd.jenkins-x.io
@@ -16,6 +7,3 @@ dependencies:
   name: exposecontroller
   repository: https://chartmuseum.build.cd.jenkins-x.io
   version: 2.3.71
-- name: jenkins-x-awesome
-  repository: http://jenkins-x-chartmuseum:8080
-  version: 2.1.0
