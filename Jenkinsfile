@@ -25,6 +25,7 @@ pipeline {
         container('maven') {
           //sh 'make install'
           dir('env') {
+            sh 'jx step helm version'
             sh 'jx step helm apply'
           }
         }
