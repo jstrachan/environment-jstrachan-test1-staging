@@ -247,3 +247,29 @@ jenkins:
     Global:
       EnvVars:
         TILLER_NAMESPACE: kube-system
+exposecontroller:
+  config:
+    domain: 35.205.69.142.nip.io
+    exposer: Ingress
+    http: "true"
+    tlsacme: ""
+    pathmode: ""
+  annotations:
+    helm.sh/hook: post-install,post-upgrade
+    helm.sh/hook-delete-policy: hook-succeeded
+jenkins:
+  servers:
+    gitea: []
+    ghe: []
+    global:
+      envvars:
+        TILLER_NAMESPACE: kube-system
+  enabled: null
+prow:
+  user: ""
+  hmactoken: ""
+  oauthtoken: ""
+pipelinesecrets:
+  dockerconfig: ""
+controllerbuild:
+  enabled: null
