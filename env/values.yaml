@@ -273,3 +273,19 @@ pipelinesecrets:
   dockerconfig: ""
 controllerbuild:
   enabled: null
+PipelineSecrets: {}
+controllerbuild: {}
+expose:
+  Annotations:
+    helm.sh/hook: post-install,post-upgrade
+    helm.sh/hook-delete-policy: hook-succeeded
+  config:
+    domain: 104.199.24.99.nip.io
+    exposer: Ingress
+    http: "true"
+jenkins:
+  Servers:
+    Global:
+      EnvVars:
+        TILLER_NAMESPACE: kube-system
+prow: {}
