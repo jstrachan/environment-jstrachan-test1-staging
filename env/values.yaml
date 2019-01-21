@@ -1,291 +1,34 @@
-expose:
-  Args: 
-    - --v
-    - 4
-  Annotations:
-    helm.sh/hook: post-install,post-upgrade
-    helm.sh/hook-delete-policy: hook-succeeded
-
+PipelineSecrets: {}
 cleanup:
-  Args: 
-    - --cleanup
   Annotations:
     helm.sh/hook: pre-delete
     helm.sh/hook-delete-policy: hook-succeeded
-expose:
-  config:
-    domain: 35.195.23.231.nip.io
-    exposer: Ingress
-    http: "true"
-    tlsacme: "false"
-  Annotations:
-    helm.sh/hook: post-install,post-upgrade
-    helm.sh/hook-delete-policy: hook-succeeded
-expose:
-  config:
-    domain: 35.190.210.195.nip.io
-    exposer: Ingress
-    http: "true"
-    tlsacme: "false"
-  Annotations:
-    helm.sh/hook: post-install,post-upgrade
-    helm.sh/hook-delete-policy: hook-succeeded
-expose:
-  config:
-    domain: 104.155.72.204.nip.io
-    exposer: Ingress
-    http: "true"
-    tlsacme: "false"
-  Annotations:
-    helm.sh/hook: post-install,post-upgrade
-    helm.sh/hook-delete-policy: hook-succeeded
-expose:
-  config:
-    domain: 35.234.138.217.nip.io
-    exposer: Ingress
-    http: "true"
-    tlsacme: "false"
-  Annotations:
-    helm.sh/hook: post-install,post-upgrade
-    helm.sh/hook-delete-policy: hook-succeeded
-expose:
-  config:
-    domain: 35.230.129.231.nip.io
-    exposer: Ingress
-    http: "true"
-    tlsacme: "false"
-  Annotations:
-    helm.sh/hook: post-install,post-upgrade
-    helm.sh/hook-delete-policy: hook-succeeded
-expose:
-  config:
-    domain: 35.205.168.229.nip.io
-    exposer: Ingress
-    http: "true"
-    tlsacme: "false"
-  Annotations:
-    helm.sh/hook: post-install,post-upgrade
-    helm.sh/hook-delete-policy: hook-succeeded
-expose:
-  config:
-    domain: 35.233.61.90.nip.io
-    exposer: Ingress
-    http: "true"
-    tlsacme: "false"
-  Annotations:
-    helm.sh/hook: post-install,post-upgrade
-    helm.sh/hook-delete-policy: hook-succeeded
-expose:
-  config:
-    domain: 35.187.175.85.nip.io
-    exposer: Ingress
-    http: "true"
-    tlsacme: "false"
-  Annotations:
-    helm.sh/hook: post-install,post-upgrade
-    helm.sh/hook-delete-policy: hook-succeeded
-expose:
-  config:
-    domain: 35.205.250.155.nip.io
-    exposer: Ingress
-    http: "true"
-    tlsacme: "false"
-  Annotations:
-    helm.sh/hook: post-install,post-upgrade
-    helm.sh/hook-delete-policy: hook-succeeded
-expose:
-  config:
-    domain: 35.195.52.159.nip.io
-    exposer: Ingress
-    http: "true"
-    tlsacme: "false"
-  Annotations:
-    helm.sh/hook: post-install,post-upgrade
-    helm.sh/hook-delete-policy: hook-succeeded
-jenkins:
-  Servers:
-    Global:
-      EnvVars:
-        DOCKER_REGISTRY: gcr.io
-expose:
-  config:
-    domain: 35.233.106.237.nip.io
-    exposer: Ingress
-    http: "true"
-    tlsacme: "false"
-  Annotations:
-    helm.sh/hook: post-install,post-upgrade
-    helm.sh/hook-delete-policy: hook-succeeded
-expose:
-  config:
-    domain: 35.195.31.136.nip.io
-    exposer: Ingress
-    http: "true"
-    tlsacme: "false"
-    pathMode: ""
-  Annotations:
-    helm.sh/hook: post-install,post-upgrade
-    helm.sh/hook-delete-policy: hook-succeeded
-expose:
-  config:
-    domain: 35.233.87.197.nip.io
-    exposer: Ingress
-    http: "true"
-    tlsacme: "false"
-    pathMode: ""
-  Annotations:
-    helm.sh/hook: post-install,post-upgrade
-    helm.sh/hook-delete-policy: hook-succeeded
-expose:
-  config:
-    domain: 104.199.34.161.nip.io
-    exposer: Ingress
-    http: "true"
-    tlsacme: "false"
-    pathMode: ""
-  Annotations:
-    helm.sh/hook: post-install,post-upgrade
-    helm.sh/hook-delete-policy: hook-succeeded
-expose:
-  config:
-    domain: 35.233.48.48.nip.io
-    exposer: Ingress
-    http: "true"
-    tlsacme: "false"
-    pathMode: ""
-  Annotations:
-    helm.sh/hook: post-install,post-upgrade
-    helm.sh/hook-delete-policy: hook-succeeded
-expose:
-  config:
-    domain: 130.211.63.164.nip.io
-    exposer: Ingress
-    http: "true"
-    tlsacme: "false"
-    pathMode: ""
-  Annotations:
-    helm.sh/hook: post-install,post-upgrade
-    helm.sh/hook-delete-policy: hook-succeeded
-expose:
-  config:
-    domain: 35.195.86.39.nip.io
-    exposer: Ingress
-    http: "true"
-    tlsacme: "false"
-    pathMode: ""
-  Annotations:
-    helm.sh/hook: post-install,post-upgrade
-    helm.sh/hook-delete-policy: hook-succeeded
-expose:
-  config:
-    domain: 35.240.11.171.nip.io
-    exposer: Ingress
-    http: "true"
-    tlsacme: "false"
-    pathMode: ""
-  Annotations:
-    helm.sh/hook: post-install,post-upgrade
-    helm.sh/hook-delete-policy: hook-succeeded
-expose:
-  config:
-    domain: 130.211.48.122.nip.io
-    exposer: Ingress
-    http: "true"
-    tlsacme: "false"
-    pathMode: ""
-  Annotations:
-    helm.sh/hook: post-install,post-upgrade
-    helm.sh/hook-delete-policy: hook-succeeded
-jenkins:
-  Servers:
-    GHE:
-    - Name: GHE
-      Url: https://github.beescloud.com/api/v3/
-expose:
-  config:
-    domain: 35.205.206.250.nip.io
-    exposer: Ingress
-    http: "true"
-    tlsacme: "false"
-    pathMode: ""
-  Annotations:
-    helm.sh/hook: post-install,post-upgrade
-    helm.sh/hook-delete-policy: hook-succeeded
-jenkins:
-  Servers:
-    GHE:
-    - Name: GHE
-      Url: https://github.beescloud.com/api/v3/
-    Global:
-      EnvVars:
-        TILLER_NAMESPACE: kube-system
-expose:
-  config:
-    domain: 35.205.245.113.nip.io
-    exposer: Ingress
-    http: "true"
-    tlsacme: "false"
-    pathMode: ""
-  Annotations:
-    helm.sh/hook: post-install,post-upgrade
-    helm.sh/hook-delete-policy: hook-succeeded
-jenkins:
-  Servers:
-    Global:
-      EnvVars:
-        TILLER_NAMESPACE: kube-system
-expose:
-  config:
-    domain: 35.241.201.127.nip.io
-    exposer: Ingress
-    http: "true"
-  Annotations:
-    helm.sh/hook: post-install,post-upgrade
-    helm.sh/hook-delete-policy: hook-succeeded
-jenkins:
-  Servers:
-    Global:
-      EnvVars:
-        TILLER_NAMESPACE: kube-system
-exposecontroller:
-  config:
-    domain: 35.205.69.142.nip.io
-    exposer: Ingress
-    http: "true"
-    tlsacme: ""
-    pathmode: ""
-  annotations:
-    helm.sh/hook: post-install,post-upgrade
-    helm.sh/hook-delete-policy: hook-succeeded
-jenkins:
-  servers:
-    gitea: []
-    ghe: []
-    global:
-      envvars:
-        TILLER_NAMESPACE: kube-system
-  enabled: null
-prow:
-  user: ""
-  hmactoken: ""
-  oauthtoken: ""
-pipelinesecrets:
-  dockerconfig: ""
-controllerbuild:
-  enabled: null
-PipelineSecrets: {}
+  Args:
+  - --cleanup
 controllerbuild: {}
 expose:
   Annotations:
     helm.sh/hook: post-install,post-upgrade
     helm.sh/hook-delete-policy: hook-succeeded
   config:
-    domain: 104.199.24.99.nip.io
+    domain: 35.233.33.13.nip.io
     exposer: Ingress
     http: "true"
+exposecontroller:
+  annotations:
+    helm.sh/hook: post-install,post-upgrade
+    helm.sh/hook-delete-policy: hook-succeeded
+  config:
+    domain: 35.205.69.142.nip.io
+    exposer: Ingress
+    http: "true"
+    pathmode: ""
+    tlsacme: ""
 jenkins:
   Servers:
     Global:
       EnvVars:
         TILLER_NAMESPACE: kube-system
+pipelinesecrets:
+  dockerconfig: ""
 prow: {}
