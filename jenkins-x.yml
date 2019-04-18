@@ -1,6 +1,6 @@
 pipelineConfig:
-  agent: {}
+  agent:
+    container: gcr.io/jenkinsxio/builder-go
   env:
   - name: CHART_REPOSITORY
     value: http://chartmuseum.jx.35.189.204.50.nip.io
-  pipelines: {}
